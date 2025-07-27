@@ -1,5 +1,3 @@
-# Social-Productivity-Dashboard
-No-code productivity system for social bookmark management and task automation
 # Social Productivity Dashboard
 
 > A no-code Airtable workspace that ingests your social bookmarks, auto-generates actionable tasks with n8n + LLM, and displays everything in a kanban & planning dashboard—so you can validate the workflow before investing in a full custom app.
