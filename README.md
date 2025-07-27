@@ -111,11 +111,11 @@ Tables:
 - OpenAI API access
 
 ### Quick Start
-1. **Copy Airtable Base**: [Template Link - Coming Soon]
-2. **Import n8n Workflows**: See `/n8n-workflows/` directory
-3. **Configure API Keys**: Follow `/docs/setup-guide.md`
-4. **Test Social Capture**: Use provided webhook URLs
-5. **Customize Dashboard**: Modify Airtable interfaces to your needs
+1. **Copy Airtable Base**: Use the [base schema](airtable/base-schema.json) and [example data](airtable/example-data.csv) to create your workspace.
+2. **Import n8n Workflows**: Import the [JSON files](n8n-workflows/) into your n8n instance.
+3. **Configure API Keys**: Follow the [setup guide](docs/setup-guide.md).
+4. **Test Social Capture**: Trigger the [social-capture workflow](n8n-workflows/social-capture.json) using the provided webhook URL.
+5. **Customize Dashboard**: Adjust the [interface configs](airtable/interface-configs/) to match your workflow.
 
 ## 📁 Repository Structure
 
@@ -128,28 +128,32 @@ Tables:
 │   └── troubleshooting.md
 ├── airtable/
 │   ├── base-schema.json
-│   ├── interface-configs/
-│   └── example-data.csv
+│   ├── example-data.csv
+│   └── interface-configs/
+│       └── README.md
 ├── n8n-workflows/
+│   ├── README.md
+│   ├── calendar-sync.json
 │   ├── social-capture.json
 │   ├── task-generation.json
-│   ├── calendar-sync.json
 │   └── weekly-digest.json
 ├── ios-shortcuts/
-│   ├── social-capture.shortcut
-│   └── quick-task.shortcut
+│   └── placeholder.shortcut
 ├── browser-extension/
+│   ├── content.js
 │   ├── manifest.json
-│   ├── popup.html
-│   └── content.js
+│   └── popup.html
 ├── templates/
 │   ├── project-templates/
-│   ├── sop-templates/
-│   └── prompt-library/
+│   │   └── example-project-template.md
+│   ├── prompt-library/
+│   │   └── example-prompt.txt
+│   └── sop-templates/
+│       └── example-sop.md
 └── assets/
-    ├── screenshots/
     ├── demo-videos/
-    └── logos/
+    ├── logos/
+    └── screenshots/
 ```
 
 ## 🎯 Roadmap
