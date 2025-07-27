@@ -1,0 +1,35 @@
+{
+  "name": "Task Generation",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": 1,
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "task", "value": "Example task" }
+          ]
+        }
+      },
+      "id": 2,
+      "name": "Set",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [ { "node": "Set", "type": "main", "index": 0 } ]
+      ]
+    }
+  },
+  "active": false
+}

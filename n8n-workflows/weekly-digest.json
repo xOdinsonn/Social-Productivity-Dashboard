@@ -1,0 +1,35 @@
+{
+  "name": "Weekly Digest",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            { "hour": 8, "minute": 0, "weekday": "FRI" }
+          ]
+        }
+      },
+      "id": 1,
+      "name": "Cron",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {},
+      "id": 2,
+      "name": "Gmail",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Cron": {
+      "main": [
+        [ { "node": "Gmail", "type": "main", "index": 0 } ]
+      ]
+    }
+  },
+  "active": false
+}

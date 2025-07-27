@@ -1,0 +1,35 @@
+{
+  "name": "Calendar Sync",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            { "hour": 1, "minute": 0, "weekday": "MON" }
+          ]
+        }
+      },
+      "id": 1,
+      "name": "Cron",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {},
+      "id": 2,
+      "name": "Google Calendar",
+      "type": "n8n-nodes-base.googleCalendar",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Cron": {
+      "main": [
+        [ { "node": "Google Calendar", "type": "main", "index": 0 } ]
+      ]
+    }
+  },
+  "active": false
+}
