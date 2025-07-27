@@ -31,6 +31,35 @@ As a busy professional juggling family, full-time work (Mon-Thu), and an AI auto
 - [ ] Desktop companion app
 - [ ] Full feature set implementation
 
+## 📁 Repository Structure
+
+```
+├── README.md                           # Project overview and documentation
+├── docs/
+│   ├── development-methodology.md      # AI-assisted development approach
+│   ├── phase-1/                       # Phase 1 documentation
+│   │   ├── weekly-reports/             # Progress tracking
+│   │   ├── setup-guides/               # Installation instructions
+│   │   └── lessons-learned/            # Development insights
+│   ├── phase-2/                       # Phase 2 planning (future)
+│   └── phase-3/                       # Phase 3 planning (future)
+├── phase-1-mvp/                       # MVP development files
+│   ├── airtable/                      # Database configurations
+│   ├── n8n-workflows/                 # Automation workflows
+│   ├── integrations/                  # Third-party setups
+│   └── deployment/                    # Setup and deployment
+├── .github/
+│   ├── ISSUE_TEMPLATE/                # Issue templates by phase
+│   └── workflows/                     # CI/CD (future)
+├── phase-2-service/                   # Service development (future)
+└── phase-3-native/                    # Native apps (future)
+```
+
+### Current Development Focus
+🎯 **Phase 1 MVP** - All active development in `phase-1-mvp/` directory
+📚 **Documentation** - Comprehensive methodology and progress tracking in `docs/`
+🔧 **AI-Assisted** - Development approach documented in `docs/development-methodology.md`
+
 ## ✨ Core Features
 
 ### Social Capture & Integration
@@ -183,6 +212,26 @@ Tables:
 - **Task Completion**: 80%+ of generated tasks marked as done
 - **Time Savings**: Reduce "where did I leave off" confusion by 90%
 - **Project Progress**: Measurable advancement on 2-3 key business initiatives
+
+## 🧠 Development Methodology
+
+TBD – This section outlines the overall approach for AI-assisted development across three phases.
+
+## 📖 Detailed Methodology Documentation
+
+For comprehensive information about the AI-assisted development approach used in this project, see:
+
+**[Development Methodology Documentation](docs/development-methodology.md)**
+
+This document covers:
+- Three-phase development strategy
+- AI tool selection and usage patterns
+- Sean Kochel's 8-Step Vibe Code System implementation
+- Quality assurance and validation processes
+- Weekly development workflow
+- Lessons learned framework
+
+The methodology is continuously updated based on real-world development experience and community feedback.
 
 ## 🤝 Contributing
 
