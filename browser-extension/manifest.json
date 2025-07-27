@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Social Productivity Dashboard",
+  "version": "0.1",
+  "description": "Minimal browser extension for capturing data.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
