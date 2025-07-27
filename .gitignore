@@ -1,0 +1,31 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Node and n8n dependencies
+node_modules/
+**/node_modules/
+
+# Build and compiled output
+/dist/
+/build/
+*.pyc
+__pycache__/
+*.class
+*.o
+*.out
+*.exe
+*.dll
+*.so
+*.a
+
+# Personal data exports
+exports/
+**/exports/
+personal-data/
+*.zip
+*.tar
+*.tar.gz
