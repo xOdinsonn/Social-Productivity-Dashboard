@@ -1,0 +1,9 @@
+table,url,title,source,status,name,project,due_date,description,owner,content,linked_record,steps,task,start,end
+saves,https://example.com/article,Interesting Article,Google Feed,Inbox,,,,,,,,,,,
+saves,https://youtube.com/watch?v=12345,AI Video,YouTube,Tagged,,,,,,,,,,,
+tasks,,,,To-Do,Draft launch email,Alpha Project,2025-08-15,,,,,,,,
+projects,,,,,Alpha Project,,Launch of new site,Alice,,,,,,,
+notes,,Meeting Notes,,,,,,,,Meeting notes from kickoff,Alpha Project,,,,
+prompts,,,,,Daily Summary,,,,,Summarize new ideas,,,,,
+sops,,Release Checklist,,,,,,,,1. Build -> Test -> Deploy,,,,,
+focus_logs,,,,,,,,,,,,Draft launch email,2025-08-01T09:00:00Z,2025-08-01T10:00:00Z,

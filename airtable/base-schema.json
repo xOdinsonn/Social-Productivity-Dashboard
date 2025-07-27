@@ -1,1 +1,60 @@
-
+{
+  "tables": [
+    {
+      "name": "saves",
+      "fields": [
+        {"name": "url", "type": "url"},
+        {"name": "title", "type": "singleLineText"},
+        {"name": "source", "type": "singleLineText"},
+        {"name": "status", "type": "singleSelect", "options": ["Inbox", "Tagged", "Archived"]}
+      ]
+    },
+    {
+      "name": "tasks",
+      "fields": [
+        {"name": "name", "type": "singleLineText"},
+        {"name": "project", "type": "linkToAnotherRecord", "linkedTable": "projects"},
+        {"name": "status", "type": "singleSelect", "options": ["To-Do", "Doing", "Done"]},
+        {"name": "due_date", "type": "date"}
+      ]
+    },
+    {
+      "name": "projects",
+      "fields": [
+        {"name": "name", "type": "singleLineText"},
+        {"name": "description", "type": "longText"},
+        {"name": "owner", "type": "singleLineText"}
+      ]
+    },
+    {
+      "name": "notes",
+      "fields": [
+        {"name": "title", "type": "singleLineText"},
+        {"name": "content", "type": "longText"},
+        {"name": "linked_record", "type": "singleLineText"}
+      ]
+    },
+    {
+      "name": "prompts",
+      "fields": [
+        {"name": "name", "type": "singleLineText"},
+        {"name": "content", "type": "longText"}
+      ]
+    },
+    {
+      "name": "sops",
+      "fields": [
+        {"name": "title", "type": "singleLineText"},
+        {"name": "steps", "type": "longText"}
+      ]
+    },
+    {
+      "name": "focus_logs",
+      "fields": [
+        {"name": "task", "type": "linkToAnotherRecord", "linkedTable": "tasks"},
+        {"name": "start", "type": "dateTime"},
+        {"name": "end", "type": "dateTime"}
+      ]
+    }
+  ]
+}
